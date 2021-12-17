@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010B01"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="monospace"
+        android:hint="Enter Url"
+        android:singleLine="true"
+        android:padding="12sp"
+        android:textColor="#541787"
+        android:textColorHint="#541787"
+        app:layout_constraintEnd_toStartOf="@+id/ib"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cb"
+        android:layout_width="40sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/et"
+        app:layout_constraintEnd_toEndOf="@+id/et"
+        app:layout_constraintTop_toTopOf="@+id/et"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:foregroundTint="#FFFFFF"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdgeLength="7sp"
+        android:backgroundTint="#0A500F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+</androidx.constraintlayout.widget.ConstraintLayout>
